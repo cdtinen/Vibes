@@ -1,0 +1,41 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/color_picker">
+
+        <com.skydoves.colorpickerpreference.ColorPickerPreference
+            android:key="@string/key_gradient_start"
+            android:title="Gradient Color Start"
+            android:summary="changes the beginning background gradient color"
+            app:preference_dialog_title="Gradient Color Start"
+            app:preference_dialog_positive="@string/confirm"
+            app:preference_dialog_negative="@string/cancel"
+            app:preference_palette="@drawable/palette"
+            app:preference_selector="@drawable/wheel"
+            app:default_color="@color/colorGradientStart"/>
+
+        <com.skydoves.colorpickerpreference.ColorPickerPreference
+            android:key="@string/key_gradient_middle"
+            android:title="Gradient Color Middle"
+            android:summary="changes the center background gradient color"
+            app:preference_dialog_title="Gradient Color Middle"
+            app:preference_dialog_positive="@string/confirm"
+            app:preference_dialog_negative="@string/cancel"
+            app:preference_palette="@drawable/palette"
+            app:preference_selector="@drawable/wheel"
+            app:default_color="@color/colorGradientCenter"/>
+
+        <com.skydoves.colorpickerpreference.ColorPickerPreference
+            android:key="@string/key_gradient_end"
+            android:title="Gradient Color End"
+            android:summary="changes the ending background gradient color"
+            app:preference_dialog_title="Gradient Color End"
+            app:preference_dialog_positive="@string/confirm"
+            app:preference_dialog_negative="@string/cancel"
+            app:preference_palette="@drawable/palette"
+            app:preference_selector="@drawable/wheel"
+            app:default_color="@color/colorGradientEnd"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

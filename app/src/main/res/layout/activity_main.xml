@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:background="@drawable/gradient_drawable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/const_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/sound_1"
+            android:layout_width="127dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/rain_desc"
+            app:layout_constraintBottom_toTopOf="@+id/volBar_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.852"
+            app:srcCompat="@mipmap/drizzle" />
+
+        <SeekBar
+            android:id="@+id/volBar_1"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="160dp"
+            android:tag="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/sound_2"
+            android:layout_width="127dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/wind_desc"
+            app:layout_constraintBottom_toTopOf="@+id/volBar_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.852"
+            app:srcCompat="@mipmap/wind" />
+
+        <SeekBar
+            android:id="@+id/volBar_2"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="48dp"
+            android:tag="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/sound_3"
+            android:layout_width="127dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/ocean_desc"
+            app:layout_constraintBottom_toTopOf="@+id/volBar_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/volBar_1"
+            app:layout_constraintVertical_bias="0.761"
+            app:srcCompat="@mipmap/sea" />
+
+        <SeekBar
+            android:id="@+id/volBar_3"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="130dp"
+            android:tag="3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/volBar_1" />
+
+        <ImageView
+            android:id="@+id/sound_4"
+            android:layout_width="127dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/storm_desc"
+            app:layout_constraintBottom_toTopOf="@+id/volBar_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/volBar_2"
+            app:layout_constraintVertical_bias="0.761"
+            app:srcCompat="@mipmap/thunder" />
+
+        <SeekBar
+            android:id="@+id/volBar_4"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="48dp"
+            android:tag="4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/volBar_2" />
+
+        <ImageView
+            android:id="@+id/sound_5"
+            android:layout_width="127dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/fire_desc"
+            app:layout_constraintBottom_toTopOf="@+id/volBar_5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/volBar_3"
+            app:layout_constraintVertical_bias="0.761"
+            app:srcCompat="@mipmap/fire" />
+
+        <SeekBar
+            android:id="@+id/volBar_5"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="130dp"
+            android:tag="5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/volBar_3" />
+
+        <ImageView
+            android:id="@+id/sound_6"
+            android:layout_width="127dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/hail_desc"
+            app:layout_constraintBottom_toTopOf="@+id/volBar_6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/volBar_4"
+            app:layout_constraintVertical_bias="0.761"
+            app:srcCompat="@mipmap/sleet" />
+
+        <SeekBar
+            android:id="@+id/volBar_6"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="48dp"
+            android:tag="6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/volBar_4" />
+
+        <ImageView
+            android:id="@+id/sound_7"
+            android:layout_width="127dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/train_desc"
+            app:layout_constraintBottom_toTopOf="@+id/volBar_7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/volBar_5"
+            app:layout_constraintVertical_bias="0.761"
+            app:srcCompat="@mipmap/train" />
+
+        <SeekBar
+            android:id="@+id/volBar_7"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="130dp"
+            android:tag="7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/volBar_5" />
+
+        <ImageView
+            android:id="@+id/sound_8"
+            android:layout_width="127dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/forest_desc"
+            app:layout_constraintBottom_toTopOf="@+id/volBar_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/volBar_6"
+            app:layout_constraintVertical_bias="0.761"
+            app:srcCompat="@mipmap/tree" />
+
+        <SeekBar
+            android:id="@+id/volBar_8"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="48dp"
+            android:tag="8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/volBar_6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

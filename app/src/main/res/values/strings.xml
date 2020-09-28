@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Vibes</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="rain_desc">Rain</string>
+    <string name="wind_desc">Wind</string>
+    <string name="ocean_desc">Ocean</string>
+    <string name="storm_desc">Thunderstorm</string>
+    <string name="fire_desc">Fire</string>
+    <string name="hail_desc">Hail</string>
+    <string name="train_desc">Train</string>
+    <string name="forest_desc">Forest</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="color_picker">Colors</string>
+
+    <!-- Color Preferences -->
+    <string name="color_default">Default color</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+</resources>
